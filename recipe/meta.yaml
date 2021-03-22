@@ -12,15 +12,15 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   host:
-    - python
+    - python >=3.6.0
     - pip
   run:
-    - python
+    - python >=3.6.0
     - numpy >=1.14.0
     - scipy >=0.18.0
     - pandas >=0.22.0
@@ -56,3 +56,4 @@ extra:
   recipe-maintainers:
     - sodre
     - CurtLH
+    - thewchan
