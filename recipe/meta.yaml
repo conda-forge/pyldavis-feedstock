@@ -1,6 +1,6 @@
 {% set name = "pyLDAvis" %}
-{% set version = "2.1.2" %}
-{% set sha256 = "022041229a8fa88eee354bb19896f3e87293a82f90be98ad0df1fdd494a0fa22" %}
+{% set version = "3.2.2" %}
+{% set sha256 = "cef05cd1dc44de80dac31f6f9cf8b6c4d596e3db7a4dfb8f7b06a83eb595c4d0" %}
 
 package:
   name: {{ name|lower }}
@@ -12,8 +12,8 @@ source:
 
 build:
   noarch: python
-  number: 1
-  script: python -m pip install --no-deps --ignore-installed .
+  number: 0
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -39,7 +39,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'Python library for interactive topic model visualization'
+  summary: Python library for interactive topic model visualization
 
   description: |
     pyLDAvis is designed to help users interpret the topics in a topic 
