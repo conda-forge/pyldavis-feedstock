@@ -1,6 +1,6 @@
 {% set name = "pyLDAvis" %}
-{% set version = "3.3.0" %}
-{% set sha256 = "828677860409ebf11b6077a4589a30ab94f51dc4b2f8751105aae8d95dd28dd4" %}
+{% set version = "3.3.1" %}
+{% set sha256 = "f181b88401f6f8f17d5a99ab69ef99b2c496faa276919262f8ec246307b7050c" %}
 
 package:
   name: {{ name|lower }}
