@@ -32,6 +32,8 @@ requirements:
     - scikit-learn >=1.0.0
     - gensim
     - setuptools
+    # Required for gensim
+    - fuzzytm
 
 test:
   imports:
